@@ -1,5 +1,3 @@
-translation
-========
 
 This a content package project generated using the multimodule-content-package-archetype.
 
@@ -28,3 +26,5 @@ The CRX host and port can be specified on the command line with:
 mvn -Dcrx.host=otherhost -Dcrx.port=5502 <goals>
 
 
+# machine-translation-aem
+This code is for developing custom connector for machine translation in AEM
