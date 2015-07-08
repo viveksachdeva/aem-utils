@@ -17,10 +17,11 @@ public class JobGeneratorServiceImpl implements JobGeneratorService {
     private JobManager jobManager;
 
     @Override
-    public void startJob() {
-        final Map<String, Object> props = new HashMap<String, Object>();
-        props.put("item1", "/something");
-        props.put("count", 5);
-        jobManager.addJob("my/special/jobtopic", props);
+    public void publishJob() {
+        final Map<String, Object> jobProperties = new HashMap<String, Object>();
+        jobProperties.put("jobName", "some dummy job");
+        jobProperties.put("count", 3);
+        jobProperties.put("job location", "yet another city");
+        jobManager.addJob("my/sling/job", jobProperties);
     }
 }

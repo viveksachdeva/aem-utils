@@ -8,7 +8,7 @@ import org.apache.sling.event.jobs.consumer.JobConsumer;
 
 @Component
 @Service(value={JobConsumer.class})
-@Property(name=JobConsumer.PROPERTY_TOPICS, value="my/special/jobtopic")
+@Property(name=JobConsumer.PROPERTY_TOPICS, value="my/sling/job")
 public class MyJobConsumer implements JobConsumer {
 
     public JobResult process(final Job job) {

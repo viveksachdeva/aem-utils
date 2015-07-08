@@ -20,7 +20,7 @@ public class MyDummyJobServlet extends SlingAllMethodsServlet {
 
     protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws ServletException, IOException {
         /*This code just starts a dummy job*/
-        jobGeneratorService.startJob();
+        jobGeneratorService.publishJob();
         response.getWriter().print("Done");
     }
 }
