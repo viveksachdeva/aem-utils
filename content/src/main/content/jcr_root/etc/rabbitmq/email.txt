@@ -1,0 +1,10 @@
+From: admin@myco.com
+Subject: Contact Form Submission
+
+We have received a contact request with the information below:
+<br/>
+Email: ${email}
+<br/>
+Subject: ${subject}
+<br/>
+Message: ${message}

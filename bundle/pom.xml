@@ -66,24 +66,26 @@
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.jcr.api</artifactId>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.adobe.granite</groupId>-->
-            <!--<artifactId>com.adobe.granite.translation.api</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>com.adobe.granite</groupId>-->
-            <!--<artifactId>com.adobe.granite.translation.core</artifactId>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.adobe.aem</groupId>
-            <artifactId>aem-api</artifactId>
-            <version>6.0.0.1</version>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.scr</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-email</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.day.commons.osgi.wrapper</groupId>
+            <artifactId>com.day.commons.osgi.wrapper.commons-lang2</artifactId>
+        </dependency>
     </dependencies>
 
     <!-- ====================================================================== -->
