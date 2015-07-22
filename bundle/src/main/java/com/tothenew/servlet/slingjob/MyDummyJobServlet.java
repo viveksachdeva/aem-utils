@@ -1,4 +1,4 @@
-package com.tothenew.servlet;
+package com.tothenew.servlet.slingjob;
 
 import com.tothenew.JobGeneratorService;
 import org.apache.felix.scr.annotations.Reference;

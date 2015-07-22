@@ -1,4 +1,4 @@
-package com.tothenew.servlet;
+package com.tothenew.servlet.rabbitmq;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

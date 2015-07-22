@@ -1,4 +1,4 @@
-package com.tothenew.impl;
+package com.tothenew.impl.machinetranslation;
 
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Property;

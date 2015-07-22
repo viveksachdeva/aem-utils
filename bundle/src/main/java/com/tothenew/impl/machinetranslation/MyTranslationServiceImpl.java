@@ -1,4 +1,4 @@
-package com.tothenew.impl;
+package com.tothenew.impl.machinetranslation;
 
 import com.adobe.granite.translation.api.TranslationConstants;
 import com.adobe.granite.translation.api.TranslationException;

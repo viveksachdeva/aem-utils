@@ -1,4 +1,4 @@
-package com.tothenew.impl;
+package com.tothenew.impl.slingjob;
 
 import com.tothenew.JobGeneratorService;
 import org.apache.felix.scr.annotations.Component;
