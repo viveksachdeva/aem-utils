@@ -61,22 +61,24 @@ void callPost(String baseURL, Map contentMap) {
 
 def timeStart = System.currentTimeMillis()
 println "Starting XML Parsing at ::: ${timeStart}"
-def records = new XmlParser().parseText(file.text)?.course
+/*Using Groovy XML Parser to parse XML*/
+def records = new XmlParser().parseText(file.text)?.blog
 
-records.eachWithIndex { course, idx ->
-    def name = course.name.text()
-    def content = course.outline.text()
-    def status = course.status.text()
-    def parentSubject = course.subject_parent.text()
+/*Iterate over all XML records and create a map that will be POSTed to AEM*/
+records.eachWithIndex { blog, idx ->
+    def name = blog.name.text()
+    def content = blog.outline.text()
+    def status = blog.status.text()
+    def parentSubject = blog.subject_parent.text()
     Map contentMap = [
             "./jcr:primaryType": "cq:Page",
             "./jcr:content/jcr:primaryType": "cq:PageContent",
             "./jcr:content/jcr:title": "${name}",
-            "./jcr:content/course/sling:resourceType": resourceType,
-            "./jcr:content/course/status": status,
-            "./jcr:content/course/parentSubject": parentSubject,
-            "./jcr:content/course/text/sling:resourceType": "foundation/components/text",
-            "./jcr:content/course/text/text": "${content}"
+            "./jcr:content/blog/sling:resourceType": resourceType,
+            "./jcr:content/blog/status": status,
+            "./jcr:content/blog/parentSubject": parentSubject,
+            "./jcr:content/blog/text/sling:resourceType": "foundation/components/text",
+            "./jcr:content/blog/text/text": "${content}"
     ]
     callPost("${baseContentPath}blog${idx}", contentMap)
 }
